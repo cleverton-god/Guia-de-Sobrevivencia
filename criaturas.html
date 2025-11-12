@@ -7,7 +7,6 @@
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
   </head>
@@ -40,249 +39,187 @@
         </a>
 
         <ul class="nav nav-pills">
-          <li class="nav-item">
-            <a href="./index.html" class="nav-link active">Início</a>
-          </li>
-          <li class="nav-item">
-            <a href="./criaturas.html" class="nav-link">Criaturas</a>
-          </li>
-          <li class="nav-item">
-            <a href="./taticas.html" class="nav-link">Táticas</a>
-          </li>
-          <li class="nav-item">
-            <a href="./recursos.html" class="nav-link">Recursos</a>
-          </li>
-          <li class="nav-item">
-            <a href="./relatar.html" class="nav-link">Relatar</a>
-          </li>
+          <li class="nav-item"><a href="./index.html" class="nav-link">Início</a></li>
+          <li class="nav-item"><a href="./criaturas.html" class="nav-link active">Criaturas</a></li>
+          <li class="nav-item"><a href="./taticas.html" class="nav-link">Táticas</a></li>
+          <li class="nav-item"><a href="./recursos.html" class="nav-link">Recursos</a></li>
+          <li class="nav-item"><a href="./relatar.html" class="nav-link">Relatar</a></li>
         </ul>
       </header>
     </div>
 
-<!-- 🐉 Seção: Criaturas e Monstros -->
-<section class="container my-5">
-  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+    <!-- 🐉 Seção: Criaturas e Monstros -->
+    <section class="container my-5">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
 
-    <!-- Dragão -->
-    <div class="col">
-      <div class="card shadow-sm">
-        <img src="./assets/img/dragao.jpg" class="card-img-top" alt="Dragão" />
-        <div class="card-body">
-          <p class="card-text">
-            <strong>Dragão:</strong> Um ser esperto que voa pelos céus em busca de almas. Será que você conhece esse ser flamejante?
-          </p>
-          <div class="info">
-            <p>Ponto fraco: <strong>Água</strong></p>
-            <p>Táticas: Se esconder antes que ele te veja.</p>
-          </div>
-          <div class="d-flex justify-content-between align-items-center mt-3">
-            <small class="text-body-secondary">Força +20</small>
-            <button class="btn btn-sm btn-outline-secondary">Ver mais</button>
+        <!-- Dragão -->
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="./assets/img/dragao.jpg" class="card-img-top" alt="Dragão" />
+            <div class="card-body">
+              <p><strong>Dragão:</strong> Um ser esperto que voa pelos céus em busca de almas.</p>
+              <p>Ponto fraco: <strong>Água</strong></p>
+              <p>Táticas: Se esconder antes que ele te veja.</p>
+              <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modalDragao">Ver mais</button>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <!-- Carnifex -->
-    <div class="col">
-      <div class="card shadow-sm">
-        <img src="./assets/img/Aranha.jpg" class="card-img-top" alt="Carnifex" />
-        <div class="card-body">
-          <p class="card-text">
-            <strong>Carnifex:</strong> Uma mutação tenebrosa que avança sobre você. Será que consegue escapar?
-          </p>
-          <div class="info">
-            <p>Ponto fraco: <strong>Fogo</strong></p>
-            <p>Táticas: Use o calor a seu favor.</p>
-          </div>
-          <div class="d-flex justify-content-between align-items-center mt-3">
-            <small class="text-body-secondary">Perigo +12</small>
-            <button class="btn btn-sm btn-outline-secondary">Ver mais</button>
+        <!-- Carnifex -->
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="./assets/img/Aranha.jpg" class="card-img-top" alt="Carnifex" />
+            <div class="card-body">
+              <p><strong>Carnifex:</strong> Uma mutação tenebrosa que avança sobre você.</p>
+              <p>Ponto fraco: <strong>Fogo</strong></p>
+              <p>Táticas: Use o calor a seu favor.</p>
+              <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modalCarnifex">Ver mais</button>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <!-- Zumbi -->
-    <div class="col">
-      <div class="card shadow-sm">
-        <img src="./assets/img/zumbi.jpg" class="card-img-top" alt="Zumbi" />
-        <div class="card-body">
-          <p class="card-text">
-            <strong>Zumbi:</strong> Uma criatura veloz, talvez até um pouco burra — mas fatal.
-          </p>
-          <div class="info">
-            <p>Ponto fraco: <strong>Qualquer coisa</strong></p>
-            <p>Táticas: Pode lutar de frente, ele não é tão forte.</p>
-          </div>
-          <div class="d-flex justify-content-between align-items-center mt-3">
-            <small class="text-body-secondary">Perigo +2</small>
-            <button class="btn btn-sm btn-outline-secondary">Ver mais</button>
+        <!-- Zumbi -->
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="./assets/img/zumbi.jpg" class="card-img-top" alt="Zumbi" />
+            <div class="card-body">
+              <p><strong>Zumbi:</strong> Uma criatura veloz, talvez até um pouco burra — mas fatal.</p>
+              <p>Ponto fraco: <strong>Qualquer coisa</strong></p>
+              <p>Táticas: Pode lutar de frente, ele não é tão forte.</p>
+              <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modalZumbi">Ver mais</button>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <!-- Mahoraga -->
-    <div class="col">
-      <div class="card shadow-sm">
-        <img src="./assets/img/mahoraga.jpg" class="card-img-top" alt="Mahoraga" />
-        <div class="card-body">
-          <p class="card-text">
-            <strong>Mahoraga:</strong> O mais poderoso entre os monstros terrestres.
-          </p>
-          <div class="info">
-            <p>Ponto fraco: <strong>Desconhecido</strong></p>
-            <p>Táticas: Corre.</p>
-          </div>
-          <div class="d-flex justify-content-between align-items-center mt-3">
-            <small class="text-body-secondary">Perigo +11</small>
-            <button class="btn btn-sm btn-outline-secondary">Ver mais</button>
+        <!-- Mahoraga -->
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="./assets/img/mahoraga.jpg" class="card-img-top" alt="Mahoraga" />
+            <div class="card-body">
+              <p><strong>Mahoraga:</strong> O mais poderoso entre os monstros terrestres.</p>
+              <p>Ponto fraco: <strong>Desconhecido</strong></p>
+              <p>Táticas: Corre.</p>
+              <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modalMahoraga">Ver mais</button>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <!-- Monstro das Sombras -->
-    <div class="col">
-      <div class="card shadow-sm">
-        <img src="./assets/img/monstroSombra.jpg" class="card-img-top" alt="Monstro das Sombras" />
-        <div class="card-body">
-          <p class="card-text">
-            <strong>Monstro das Sombras:</strong> Ninguém sabe ao certo o que ele é. Na verdade, ninguém nunca o viu — a sombra é seu refúgio.
-          </p>
-          <div class="info">
-            <p>Ponto fraco: <strong>Luz</strong></p>
-            <p>Táticas: Não saia da luz.</p>
-          </div>
-          <div class="d-flex justify-content-between align-items-center mt-3">
-            <small class="text-body-secondary">Perigo +15</small>
-            <button class="btn btn-sm btn-outline-secondary">Ver mais</button>
+        <!-- Monstro das Sombras -->
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="./assets/img/monstroSombra.jpg" class="card-img-top" alt="Monstro das Sombras" />
+            <div class="card-body">
+              <p><strong>Monstro das Sombras:</strong> Ninguém sabe ao certo o que ele é.</p>
+              <p>Ponto fraco: <strong>Luz</strong></p>
+              <p>Táticas: Não saia da luz.</p>
+              <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modalSombra">Ver mais</button>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <!-- Lono -->
-    <div class="col">
-      <div class="card shadow-sm">
-        <img src="./assets/img/Lono.jpg" class="card-img-top" alt="Lono" />
-        <div class="card-body">
-          <p class="card-text">
-            <strong>Lono:</strong> Conhecido como pai das matas. Dica: ele não gosta de invasores.
-          </p>
-          <div class="info">
-            <p>Ponto fraco: <strong>Cabeça</strong></p>
-            <p>Táticas: Ataque de lugares altos.</p>
-          </div>
-          <div class="d-flex justify-content-between align-items-center mt-3">
-            <small class="text-body-secondary">Perigo +10</small>
-            <button class="btn btn-sm btn-outline-secondary">Ver mais</button>
+        <!-- Lono -->
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="./assets/img/Lono.jpg" class="card-img-top" alt="Lono" />
+            <div class="card-body">
+              <p><strong>Lono:</strong> Conhecido como pai das matas. Dica: ele não gosta de invasores.</p>
+              <p>Ponto fraco: <strong>Cabeça</strong></p>
+              <p>Táticas: Ataque de lugares altos.</p>
+              <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modalLono">Ver mais</button>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <!-- Sereia -->
-    <div class="col">
-      <div class="card shadow-sm">
-        <img src="./assets/img/sereia.jpg" class="card-img-top" alt="Sereia" />
-        <div class="card-body">
-          <p class="card-text">
-            <strong>Sereia:</strong> Protetora das águas — você não vai querer ouvir a voz dela.
-          </p>
-          <div class="info">
-            <p>Ponto fraco: <strong>Chamas</strong></p>
-            <p>Táticas: Mantenha-se longe da costa.</p>
-          </div>
-          <div class="d-flex justify-content-between align-items-center mt-3">
-            <small class="text-body-secondary">Perigo +8</small>
-            <button class="btn btn-sm btn-outline-secondary">Ver mais</button>
+        <!-- Sereia -->
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="./assets/img/sereia.jpg" class="card-img-top" alt="Sereia" />
+            <div class="card-body">
+              <p><strong>Sereia:</strong> Protetora das águas — você não vai querer ouvir a voz dela.</p>
+              <p>Ponto fraco: <strong>Chamas</strong></p>
+              <p>Táticas: Mantenha-se longe da costa.</p>
+              <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modalSereia">Ver mais</button>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <!-- Gigante de Mor -->
-    <div class="col">
-      <div class="card shadow-sm">
-        <img src="./assets/img/gigadeMor.jpg" class="card-img-top" alt="Gigante de Mor" />
-        <div class="card-body">
-          <p class="card-text">
-            <strong>Gigante de Mor:</strong> Morador das montanhas Mor — você o verá de longe se ousar se aproximar.
-          </p>
-          <div class="info">
-            <p>Ponto fraco: <strong>Costas</strong></p>
-            <p>Táticas: Avance sempre por trás.</p>
-          </div>
-          <div class="d-flex justify-content-between align-items-center mt-3">
-            <small class="text-body-secondary">Perigo +12</small>
-            <button class="btn btn-sm btn-outline-secondary">Ver mais</button>
+        <!-- Gigante de Mor -->
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="./assets/img/gigadeMor.jpg" class="card-img-top" alt="Gigante de Mor" />
+            <div class="card-body">
+              <p><strong>Gigante de Mor:</strong> Morador das montanhas Mor — você o verá de longe.</p>
+              <p>Ponto fraco: <strong>Costas</strong></p>
+              <p>Táticas: Avance sempre por trás.</p>
+              <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modalGigante">Ver mais</button>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <!-- Mãe Dina -->
-    <div class="col">
-      <div class="card shadow-sm">
-        <img src="./assets/img/Maedina.jpg" class="card-img-top" alt="Mãe Dina" />
-        <div class="card-body">
-          <p class="card-text">
-            <strong>Mãe Dina:</strong> Andarilha da ilha, vive à procura de sua próxima vítima.
-          </p>
-          <div class="info">
-            <p>Ponto fraco: <strong>Prata</strong></p>
-            <p>Táticas: Use sempre objetos afiados de prata.</p>
-          </div>
-          <div class="d-flex justify-content-between align-items-center mt-3">
-            <small class="text-body-secondary">Perigo +15</small>
-            <button class="btn btn-sm btn-outline-secondary">Ver mais</button>
+        <!-- Mãe Dina -->
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="./assets/img/Maedina.jpg" class="card-img-top" alt="Mãe Dina" />
+            <div class="card-body">
+              <p><strong>Mãe Dina:</strong> Andarilha da ilha, vive à procura de sua próxima vítima.</p>
+              <p>Ponto fraco: <strong>Prata</strong></p>
+              <p>Táticas: Use sempre objetos afiados de prata.</p>
+              <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modalDina">Ver mais</button>
+            </div>
           </div>
         </div>
+
       </div>
-    </div>
-
-  </div>
-</section>
-
+    </section>
 
     <!-- FOOTER -->
-    <footer
-      class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top container"
-    >
-      <p class="col-md-4 mb-0 text-body-secondary">
-        © 2025 Criado por Equipe Refúgio
-      </p>
-
-      <a
-        href="./index.html"
-        class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto text-decoration-none"
-      >
-        <svg class="bi me-2" width="40" height="32" aria-hidden="true">
-          <use xlink:href="#bootstrap"></use>
-        </svg>
-      </a>
-
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top container">
+      <p class="col-md-4 mb-0 text-body-secondary">© 2025 Criado por Equipe Refúgio</p>
       <ul class="nav col-md-4 justify-content-end">
-        <li class="nav-item">
-          <span class="nav-link px-2 text-body-secondary">Cleverton</span>
-        </li>
-        <li class="nav-item">
-          <span class="nav-link px-2 text-body-secondary">Vinicius</span>
-        </li>
-        <li class="nav-item">
-          <span class="nav-link px-2 text-body-secondary">Camili</span>
-        </li>
-        <li class="nav-item">
-          <span class="nav-link px-2 text-body-secondary">Arthur</span>
-        </li>
+        <li class="nav-item"><span class="nav-link text-body-secondary">Cleverton</span></li>
+        <li class="nav-item"><span class="nav-link text-body-secondary">Vinicius</span></li>
+        <li class="nav-item"><span class="nav-link text-body-secondary">Camili</span></li>
+        <li class="nav-item"><span class="nav-link text-body-secondary">Arthur</span></li>
       </ul>
     </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
+
+    <!-- 🧩 Modais das Criaturas -->
+    <div class="modal fade" id="modalDragao" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Dragão</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p>Criatura ancestral do fogo e dos céus. Evite confrontos diretos — ataque à distância e use água.</p></div></div></div>
+    </div>
+
+    <div class="modal fade" id="modalCarnifex" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Carnifex</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p>Predador mutante que caça no escuro. As chamas são sua única fraqueza.</p></div></div></div>
+    </div>
+
+    <div class="modal fade" id="modalZumbi" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Zumbi</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p>Lento, mas persistente. Ataque na cabeça para finalizar de vez.</p></div></div></div>
+    </div>
+
+    <div class="modal fade" id="modalMahoraga" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Mahoraga</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p>Nenhum ser o venceu até hoje. Evite contato a qualquer custo.</p></div></div></div>
+    </div>
+
+    <div class="modal fade" id="modalSombra" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Monstro das Sombras</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p>Movimenta-se entre sombras e luz. Leve sempre uma lanterna potente.</p></div></div></div>
+    </div>
+
+    <div class="modal fade" id="modalLono" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Lono</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p>Guardião das florestas antigas. Invadir seu território é sentença de morte.</p></div></div></div>
+    </div>
+
+    <div class="modal fade" id="modalSereia" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Sereia</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p>Sua canção enlouquece os homens. Nunca escute — fuja da água imediatamente.</p></div></div></div>
+    </div>
+
+    <div class="modal fade" id="modalGigante" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Gigante de Mor</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p>Monstro colossal das montanhas. Só o ataque pelas costas pode vencê-lo.</p></div></div></div>
+    </div>
+
+    <div class="modal fade" id="modalDina" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Mãe Dina</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p>Andarilha noturna que persegue viajantes. Evite-a com prata e oração.</p></div></div></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
