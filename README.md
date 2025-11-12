@@ -56,7 +56,7 @@ O gerenciamento do fluxo de trabalho foi feito com **Trello**, utilizando a meto
 
 | Membro | Função | Repositório Pessoal |
 |--------|---------|---------------------|
-| **Cleverton Rosa** | PM / Documentação | [GitHub - Cleverton](https://github.com/cleverton-god) |
+| **Cleverton Rosa** | PM / Documentação / Auxiliar Geral| [GitHub - Cleverton](https://github.com/cleverton-god) |
 | **Arthur** | Front-end (A) | [GitHub - Arthur](https://github.com/ArthurJeziorski) |
 | **Vinícius** | Front-end (B) | [GitHub - Vinícius](https://github.com/Chaves-07) |
 | **Camili** | UX / Conteúdo | [GitHub - Camili](https://github.com/camilifelicetti-dot) |
