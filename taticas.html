@@ -3,37 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Taticas</title>
+    <title>Táticas</title>
+
+    <!-- BOOTSTRAP -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
     />
-  </head>
-  <style>
-    .card {
-      display: flex;
-      flex-direction: row;
-      border-radius: 10px;
-    }
-  
-    .card-content {
-      padding: 20px;
-    }
-  
-    .card img {
-      width: 200px;
-      height: 200px;
-    }
 
-  </style>
+    <style>
+      .tatic-card {
+        display: flex;
+        gap: 20px;
+        padding: 20px;
+        border-radius: 12px;
+        border: 1px solid #ddd;
+        background: #fff;
+        align-items: center;
+      }
+
+      /* Imagens */
+      .tatic-card img {
+        width: 220px;
+        height: 220px;
+        border-radius: 8px;
+        object-fit: cover;
+      }
+
+      /* Mobile: empilha */
+      @media (max-width: 768px) {
+        .tatic-card {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .tatic-card img {
+          width: 180px;
+          height: 180px;
+          border-radius: 8px;
+          object-fit: cover;
+        }
+      }
+    </style>
+  </head>
+
   <body>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- NAVBAR -->
     <div class="container">
@@ -42,8 +58,7 @@
       >
         <a
           href="./index.html"
-          id="easter-egg-logo"
-          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -83,82 +98,86 @@
       </header>
     </div>
 
+    <!-- CONTEÚDO -->
     <div class="container px-4 py-5" id="featured-3">
       <h2 class="pb-2 border-bottom">Guias práticos</h2>
+
       <div class="row g-4 py-5 row-cols-1 row-cols-lg-2">
-        
-
-        <div class="col- 6">
-          <div class="card">
-            <div class="card-content">
-              <h3 class="fs-2 text-body-emphasis">Abrigos</h3>
-              <p>Desde que seja coberto, já serve, mas os mais eficientes são:</p>
-              <div class="bd-example m-0 border-0">
-                <ol class="list-group list-group-numbered">
-                  <li class="list-group-item">Prédios altos</li>
-                  <li class="list-group-item">Bunkers subterrâneos</li>
-                  <li class="list-group-item">Estruturas fortificadas</li>
-                </ol>
-              </div>
+        <!-- ABRIGOS -->
+        <div class="col">
+          <div class="tatic-card">
+            <div>
+              <h3 class="fs-2">Abrigos</h3>
+              <p>Os mais eficientes são:</p>
+              <ol class="list-group list-group-numbered">
+                <li class="list-group-item">Prédios altos</li>
+                <li class="list-group-item">Bunkers subterrâneos</li>
+                <li class="list-group-item">Estruturas fortificadas</li>
+              </ol>
             </div>
-            
-            <img src="./assets/img/Abrigo.jpg" alt="">
+
+            <img src="./assets/img/Abrigo.jpg" alt="Abrigos" />
           </div>
         </div>
 
-        <div class="col- 6">
-          <div class="card">
-            <div class="card-content">
-              <h3 class="fs-2 text-body-emphasis">Alimentação</h3>
-              <p>Recursos alimentares essenciais para sobrevivência prolongada:</p>
-              <div class="bd-example m-0 border-0">
-                <ol class="list-group list-group-numbered">
-                  <li class="list-group-item">Água potável filtrada</li>
-                  <li class="list-group-item">Alimentos não perecíveis</li>
-                  <li class="list-group-item">Plantas comestíveis locais</li>
-                </ol>
-              </div>
+        <!-- ALIMENTAÇÃO -->
+        <div class="col">
+          <div class="tatic-card">
+            <div>
+              <h3 class="fs-2">Alimentação</h3>
+              <p>Itens essenciais para sobrevivência:</p>
+
+              <ol class="list-group list-group-numbered">
+                <li class="list-group-item">Água filtrada</li>
+                <li class="list-group-item">Alimentos não perecíveis</li>
+                <li class="list-group-item">Plantas comestíveis locais</li>
+              </ol>
             </div>
-            <img src="./assets/img/Alimentação.webp" alt="">
+
+            <img src="./assets/img/Alimentação.webp" alt="Alimentação" />
           </div>
         </div>
 
-        <div class="col- 6">
-          <div class="card">
-            <div class="card-content">
-              <h3 class="fs-2 text-body-emphasis">Sinais de Socorro</h3>
-              <p>Voce pode usar essas instruções</p>
-              <div class="bd-example m-0 border-0">
-                <ol class="list-group list-group-numbered">
-                  <li class="list-group-item">Se correr perigo, tente ficar em um lugar alto</li>
-                  <li class="list-group-item">grite ou usa qualquer objeto que faça luz para chamar atenção de
-                    outros sobreviventes</li>
-                  <li class="list-group-item">Jamais grite quando tiver no chão, as criaturas vagam por lá</li>
-                </ol>
-              </div>
+        <!-- SOS -->
+        <div class="col">
+          <div class="tatic-card">
+            <div>
+              <h3 class="fs-2">Sinais de Socorro</h3>
+              <p>Instruções rápidas para pedir ajuda:</p>
+
+              <ol class="list-group list-group-numbered">
+                <li class="list-group-item">Busque um local alto</li>
+                <li class="list-group-item">
+                  Use luz ou barulho para chamar atenção
+                </li>
+                <li class="list-group-item">Nunca grite ao nível do chão</li>
+              </ol>
             </div>
-            <img src="./assets/img/Sos.jpg" alt="">
+
+            <img src="./assets/img/Sos.jpg" alt="SOS" />
           </div>
         </div>
 
-        <div class="col- 6">
-          <div class="card">
-            <div class="card-content">
-              <h3 class="fs-2 text-body-emphasis">Primeiros Socorros</h3>
-              <p>Conhecimentos básicos que podem salvar vidas:</p>
-              <div class="bd-example m-0 border-0">
-                <ol class="list-group list-group-numbered">
-                  <li class="list-group-item">Tratamento de ferimentos</li>
-                  <li class="list-group-item">Kit médico básico</li>
-                  <li class="list-group-item">Sinais de infecção</li>
-                </ol>
-              </div>
+        <!-- PRIMEIROS SOCORROS -->
+        <div class="col">
+          <div class="tatic-card">
+            <div>
+              <h3 class="fs-2">Primeiros Socorros</h3>
+              <p>Conhecimentos que salvam vidas:</p>
+
+              <ol class="list-group list-group-numbered">
+                <li class="list-group-item">Tratamento de ferimentos</li>
+                <li class="list-group-item">Kit médico básico</li>
+                <li class="list-group-item">Identificação de infecções</li>
+              </ol>
             </div>
-            <img src="./assets/img/Primeiros socorros.jpg" alt="">
+
+            <img
+              src="./assets/img/Primeiros socorros.jpg"
+              alt="Primeiros Socorros"
+            />
           </div>
         </div>
-
-        
       </div>
     </div>
 
@@ -194,7 +213,5 @@
         </li>
       </ul>
     </footer>
-
-    
   </body>
 </html>
